@@ -69,7 +69,7 @@ body {
 
 /* HERO SECTION */
 
-/* A sub heading in the Hero Section */
+/* A sub heading in the Hero Section */ 
 .sub-hero-head {
     font-family: rob-bold;
     color: #24272A;
@@ -128,7 +128,7 @@ body {
 /* CUSTOM CSS ANIMATIONS IN THE HERO SECTION ENDS HERE */
 
 /* MEDIA QUERY TO TARGET THE EXTRA SMALL, SMALL AND MEDIUM SIZED SCREENS */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
     .sub-hero-head {
         text-align: center;
     }
