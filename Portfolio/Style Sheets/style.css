@@ -1,0 +1,470 @@
+/* Font# 01 */
+@font-face {
+    font-family: rob-reg;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+/* Font# 02 */
+@font-face {
+    font-family: rob-bold;
+    src: url(../Fonts/Roboto-Bold.ttf);
+}
+
+/* Font# 03 */
+@font-face {
+    font-family: rob-black;
+    src: url(../Fonts/Roboto-Black.ttf);
+}
+
+/* Universal Selector */
+* {
+    /* border: 1px solid red; */
+    overflow-x: hidden !important;
+}
+
+/* To target the body */
+body {
+    background-color: black;
+    font-family: rob-reg;
+}
+
+/* NAV BAR */
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+/* Div of the Unordered List within the Nav Bar */
+.ul-div {
+    display: flex !important;
+    align-items: end !important;
+    height: 50px;
+}
+
+/* To add hover effects on the "nav-a" */
+.nav-a:hover {
+    padding-bottom: 5px !important;
+    background-color: #24272A;
+    /* text-decoration: underline !important;
+    text-decoration-color: #51d09b !important; */
+    border: 1px solid #51d09b !important;
+    border-radius: 5px;
+}
+
+/* Contact Button in the Nav Bar */
+.contact-btn {
+    /* background-color: #1C1C21; */
+    background-image: linear-gradient(45deg, #24272A, #51d09b, #24272A);
+    width: 150px;
+    height: 60px;
+    border: none;
+}
+
+/* To add hover effects on the Contact Button */
+.contact-btn:hover {
+    background-image: linear-gradient(90deg, #24272A, #51d09b, #24272A);
+}
+
+/* HERO SECTION */
+
+/* A sub heading in the Hero Section */
+.sub-hero-head {
+    font-family: rob-bold;
+    color: #24272A;
+}
+
+/* main heading in the Hero Section */
+.hero-head {
+    font-family: rob-black;
+    color: white;
+}
+
+/* CUSTOM CSS ANIMATIONS IN THE HERO SECTION STARTS HERE */
+/* First Animation */
+.typewriter1 {
+    overflow: hidden;
+    /* Hide overflow characters */
+    white-space: nowrap;
+    /* Keep text on a single line */
+    margin: 0 0;
+    /* Center the text horizontally */
+    animation: typewriter 3s forwards, typewriter 2s forwards 2.5s;
+    /* Apply the animation */
+    text-align: left;
+    /*Text alignment*/
+}
+
+/* Second Animation */
+.typewriter2 {
+    overflow: hidden;
+    /* Hide overflow characters */
+    white-space: nowrap;
+    /* Keep text on a single line */
+    margin: 0 0;
+    /* Center the text horizontally */
+    animation: typewriter 3s forwards .5s, typewriter 2s forwards 2.5s;
+    /* Apply the animation */
+    /* animation: typewriter 4s steps(30) 1 forwards, additionalEffect 1s forwards 4s; */
+    text-align: left;
+    /*Text alignment*/
+}
+
+
+/* Define the typewriter animation */
+@keyframes typewriter {
+    from {
+        width: 0;
+        /* Start with no width */
+    }
+
+    to {
+        width: 100%;
+        /* End with full width */
+    }
+}
+
+/* CUSTOM CSS ANIMATIONS IN THE HERO SECTION ENDS HERE */
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL, SMALL AND MEDIUM SIZED SCREENS */
+@media screen and (max-width: 991px) {
+    .sub-hero-head {
+        text-align: center;
+    }
+
+    .hero-head {
+        text-align: center;
+    }
+}
+
+/* ABOUT SECTION */
+
+/* To apply the borders around the section */
+.bord {
+    border: 1px solid #24272A;
+    border-collapse: collapse;
+}
+
+/* Header of the About Info Section */
+.about-header {
+    border-bottom: 1px solid #51d09b;
+}
+
+/* The "Know More" button */
+.know-more-btn {
+    background-color: #1C1C21;
+}
+
+/* To add hover effects on the Know More Button */
+.know-more-btn:hover {
+    background-image: linear-gradient(45deg, #24272A, #51d09b, #24272A);
+    border: none;
+}
+
+/* A sub heading in the About Section */
+.about-sub-head {
+    font-family: rob-bold;
+    color: #24272A;
+}
+
+/* Main heading in the Hero Section */
+.about-head {
+    font-family: rob-black;
+    color: #24272A;
+}
+
+/* Text of the Intro part */
+.intro-txt {
+    font-family: sans;
+}
+
+/* To apply color to my name written in the About Section */
+.name {
+    color: #51d09b;
+}
+
+/* Div containing the Icons */
+.direct-links {
+    border: 1px solid #24272A;
+    border-radius: 25px;
+    width: 150px;
+    height: 70px;
+}
+
+/* Icon Buttons */
+.icon-btn {
+    background-color: #24272A;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+/* The Range Input in the Skiils part */
+.range {
+    width: 250px;
+}
+
+/* To hide the thumb of the Range Input */
+.range::-webkit-slider-thumb {
+    opacity: 0;
+}
+
+/* Names of the Skills */
+.skills {
+    color: #51d09b;
+}
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL AND SMALL SIZED SCREENS */
+@media screen and (max-width: 767px) {
+    .about-head {
+        font-size: 40px !important;
+    }
+}
+
+/* MEDIA QUERY TO TARGET THE MEDIUM SIZED SCREENS */
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .about-head {
+        font-size: 30px !important;
+    }
+
+    /* Font Size of the Paragrogh of the Intro Section */
+    .fs-intro {
+        font-size: 15px;
+    }
+
+    /* The Range Input in the Skills part */
+    .range {
+        width: 150px;
+    }
+
+    .responsive-query {
+        display: flex !important;
+    }
+
+}
+
+/* PORTFOLIO SECTION */
+
+/* The Card */
+.custom-card {
+    border: 2px solid #24272A;
+    box-shadow: 3px 4px 13px 1px rgba(36, 39, 42, 0.77);
+    -webkit-box-shadow: 3px 4px 13px 1px rgba(36, 39, 42, 0.77);
+    -moz-box-shadow: 3px 4px 13px 1px rgba(36, 39, 42, 0.77);
+    background: transparent;
+    width: 200px !important;
+    height: 200px !important;
+    transition: width 0.3s ease, height 0.3s ease;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+/* For defining hover effect */
+.custom-card:hover {
+    transform: scale(1.1);
+    /* Increase size by 10% when hovered over */
+}
+
+/* Images in the Cards */
+.card-img {
+    height: 150px;
+    width: 200px;
+}
+
+/* Another custom class for Images in the Cards */
+.custom-img {
+    height: 170px;
+}
+
+/* To change the color of the text */
+.text-color {
+    color: #51d09b;
+}
+
+/* A container containing the Images */
+.image-container {
+    position: relative;
+    display: inline-block;
+    /* Ensures the container wraps around the image */
+}
+
+/* For overlaying the text */
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Initially hide the text */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adding the hover effects */
+.image-container:hover .text-overlay {
+    display: flex;
+    /* Show the text overlay on hover */
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL AND SMALL SCREENS */
+@media screen and (max-width: 767px) {
+
+    /* The Card */
+    .custom-card {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    /* Images in the Cards */
+    .card-img {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+/* BANNER SECTION */
+
+/* The Card */
+.custom-card2 {
+    background-color: black;
+    /* background-image: linear-gradient(45deg, rgba(36, 39, 42, 1), rgba(81, 208, 155, 0.9), rgba(36, 39, 42, 1)); */
+    width: 100% !important;
+    border: none;
+}
+
+/* Card Image */
+.coder-img {
+    width: 500px !important;
+    height: 500px !important;
+}
+
+/* Sub-Heading of the card */
+.card-sub-head {
+    color: #51d09b;
+    font-family: sans;
+}
+
+/* The "Get Started" Button */
+.get-started-btn {
+    background-image: linear-gradient(45deg, #24272A, #51d09b, #24272A);
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+/* To add hover effects on the "Get Started" Button */
+.get-started-btn:hover {
+    background-image: linear-gradient(90deg, #24272A, #51d09b, #24272A);
+}
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL AND SMALL SCREENS */
+@media screen and (max-width: 767px) {
+    .coder-img {
+        width: 100% !important;
+    }
+}
+
+/* FOOTER */
+
+/* The header div */
+.upper-div {
+    border-bottom: 1px solid #51d09b;
+}
+
+/* Haeding of the Footer */
+.foot-head {
+    font-family: rob-bold;
+}
+
+/* Sub-Heading of the Footer */
+.sub-foot-head {
+    font-family: sans;
+    color: #51d09b;
+}
+
+/* Div containing the Icons */
+.contact-links {
+    width: 150px;
+    height: 150px;
+    overflow-y: hidden !important;
+}
+
+/* Icon Buttons */
+.contact-icons {
+    background-color: transparent;
+    border: none;
+    height: 150px;
+    overflow-y: hidden !important;
+}
+
+/* Span containing the Icons */
+.social-icons {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Another span containing the Icons to add some extra effects */
+.social-icons2 {
+    font-size: 50px !important;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The "Subscription" Input Bar */
+.subs-input {
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* To design the placeholder text of the "Subscription" Input bar */
+.subs-input::placeholder {
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: rob-reg;
+    color: #24272A;
+}
+
+/* The "Subscription" Input Button */
+.subs-btn {
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #24272A, #51d09b, #24272A);
+    margin-left: -30px;
+}
+
+/* To add hover effects on the "Subscription" Input Button */
+.subs-btn:hover {
+    background-image: linear-gradient(90deg, #24272A, #51d09b, #24272A);
+}
+
+/* The Copptright Div in the Footer */
+.copy-right {
+    color: #24272A;
+    border-top: 1px solid #24272A;
+}
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL AND SMALL SIZED SCREENS */
+@media screen and (max-width: 767px) {
+
+    /* Logo of the Footer */
+    .logo-foot {
+        width: 300px !important;
+        height: 100px !important;
+    }
+}
