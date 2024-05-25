@@ -1,0 +1,412 @@
+/* The regular font */
+@font-face {
+    font-family: inter-reg;
+    src: url('../Fonts/Inter-Regular.ttf');
+}
+
+/* The bold font */
+@font-face {
+    font-family: inter-bold;
+    src: url('../Fonts/Inter-Bold.ttf');
+}
+
+/* The black/ extra bold font */
+@font-face {
+    font-family: inter-black;
+    src: url('../Fonts/Inter-Black.ttf');
+}
+
+/* Universal Selector */
+* {
+    font-family: inter-reg;
+}
+
+/* Body */
+body {
+    background-color: #C8AE7D;
+}
+
+/* Background Image of the Banner Section */
+.banner-img {
+    background-image: url('../Images/banner-img.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* Nav Bar */
+nav {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+/* To add hover effects on the List Item of the Nav Bar */
+.nav-li:hover {
+    box-shadow: 0 -5px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* The Search Bar in the Nav Bar */
+.search-input {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* Placeholder of the Search Bar in the Nav Bar */
+.search-input::placeholder {
+    padding-left: 5px;
+}
+
+/* To hide the search bar by default */
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow-x: hidden !important;
+}
+
+/* To show the search bar when its ID is targeted */
+#search:target {
+    display: block;
+}
+
+/* Style for the magnifying glass icon */
+.search-icon {
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+/* Resizing the Search Icon */
+.magnifying-glass-icon {
+    font-size: 25px;
+}
+
+/* Style for the magnifying glass icon container */
+.search-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* To hide the magnifying glass icon when the search bar is targeted */
+#search:target~.search-icon {
+    display: none;
+}
+
+/* Style for the close button */
+.close-btn {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #65451F;
+}
+
+/* Background of the Hero Card */
+.card-bg {
+    background-color: transparent;
+    border: none;
+}
+
+/* For the alignment of the Card */
+.card-flex {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+
+/* Hero card's body */
+.card-body {
+    text-align: left !important;
+}
+
+/* Main Heading of the Hero Section */
+.hero-head {
+    font-family: inter-bold;
+    color: #EAC696;
+}
+
+/* Sub Heading of the Hero Section */
+.sub-head {
+    font-family: inter-bold;
+    color: #65451F;
+}
+
+/* A Button in the Hero Section */
+.hero-btn {
+    width: 180px;
+    height: 55px;
+    background-color: #EAC696;
+    color: #65451F;
+    border: none;
+}
+
+/* To add the hover effects on the Button in the Hero Section */
+.hero-btn:hover {
+    background-color: #EAC696;
+    color: #65451F;
+    border: 5px groove #C8AE7D;
+
+}
+
+/* The Menu Bar */
+.menu-bar {
+    background-color: #65451F;
+}
+
+/* To add hover effects on the List items of the Menu Bar */
+.menu-li:hover {
+    width: 10%;
+    border-top: 0 solid transparent;
+    animation: border-grow .2s forwards ease-in-out;
+    box-shadow: 0 -5px 10px #1B1212;
+}
+
+/* Defining the Animations */
+@keyframes border-grow {
+    0% {
+        border-top-width: 0;
+    }
+
+    100% {
+        border-top-width: 5px;
+        border-color: #EAC696;
+    }
+}
+
+/* Menu Icons */
+.menu-icon {
+    font-size: 30px;
+}
+
+/* Menu Text */
+.menu-txt {
+    color: white !important;
+    font-size: 15px;
+}
+
+/* A Button in the Story section */
+.story-btn {
+    width: 180px;
+    height: 55px;
+    background-color: #65451F;
+    color: #EAC696;
+    border: none;
+}
+
+/* To add the hover effects on the Button in the Story section */
+.story-btn:hover {
+    background-color: #65451F;
+    color: #EAC696;
+    border: 5px groove #EAC696;
+
+}
+
+/* Main heading of the Story Section */
+.story-head {
+    font-family: inter-bold;
+    color: #65451F;
+}
+
+/* Main Heading of the Specialities Section */
+.specail-main-head {
+    color: #65451F;
+    text-decoration: underline;
+}
+
+/* Custom class for the cards in the Specialities Section */
+.custom-card {
+    border-radius: 20px !important;
+    box-shadow: 12px 10px 16px 0px rgba(101,69,31,0.71);
+-webkit-box-shadow: 12px 10px 16px 0px rgba(101,69,31,0.71);
+-moz-box-shadow: 12px 10px 16px 0px rgba(101,69,31,0.71);
+}
+
+/* To design the top borders of the card images in the Specialities Section */
+.card-img-top {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+/* Row of the Specialities Section */
+.special-row {
+    margin-right: 0px !important;
+}
+
+/* Main Heading of the Specialities Section */
+.special-head {
+    color: #65451F;
+}
+
+/* A Button in the Specialities Section */
+.special-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #65451F;
+    color: #EAC696;
+    border: none;
+}
+
+/* To add the hover effects on the Button in the Specialities Section */
+.special-btn:hover {
+    background-color: #65451F;
+    color: #EAC696;
+    border: 5px groove #EAC696;
+
+}
+
+.bean-point{
+    width: 20px;
+    height: 20px;
+}
+
+/* A Button in the events section */
+.events-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #65451F;
+    color: #EAC696;
+    border: none;
+}
+
+/* To add the hover effects on the Button in the events section */
+.events-btn:hover {
+    background-color: #65451F;
+    color: #EAC696;
+    border: 5px groove #EAC696;
+}
+
+/* MEDIA QUERIES to target the medium sized screens */
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    .events-p{
+        font-size: 15px !important;
+    }
+}
+
+/* The Search Input Form */
+.form
+{
+    background-color: #65451F;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading of the Subcription part */
+.subs-head
+{
+    color: #C8AE7D;
+    font-family: inter-bold;
+}
+
+/* The "Subscription" Input Bar */
+.subs-input {
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* To design the placeholder text of the "Subscription" Input bar */
+.subs-input::placeholder {
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: inter-reg;
+    color: #65451F;
+}
+
+/* The "Subscription" Input Button */
+.subs-btn {
+    width: 180px;
+    height: 65px;
+    border: none;
+    border-radius: 20px;
+    background-color: #C8AE7D;
+    color: #65451F;
+    margin-left: -30px;
+}
+
+/* To add hover effects on the "Subscription" Input Button */
+.subs-btn:hover {
+    background-color: #C8AE7D;
+    color: #65451F;
+    border: 5px groove #65451F;
+}
+
+/* MEDIA QUERY TO TARGET THE EXTRA SMALL AND SMALL SCREENS */
+@media screen and (max-width: 767px) {
+    .subs-btn{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px !important;
+    }
+
+    .subs-input{
+        width: 620px !important;
+    }
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid #65451F !important;
+}
+
+/* Social Media Icons */
+.social-icons
+{
+    font-size: 30px;
+}
+
+/* Headings in the Footer */
+.foot-head
+{
+    color: #65451F;
+    font-family: inter-bold;
+}
+
+/* The Copptright Div in the Footer */
+.copy-right {
+    border-top: 1px solid #65451F;
+}

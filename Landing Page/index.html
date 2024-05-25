@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rabia Bhutto">
+    <title>Beans n Brews</title>
+    <link rel="icon" href="Images/Logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style Sheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- A section to add the background image -->
+    <section class="banner-img">
+        <!-- Nav Bar starts here -->
+        <nav class="navbar navbar-expand-lg css-nav-bar justify-content-center align-items-center">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Logo.png" alt="Logo" class="logo img-fluid">
+                </a>
+                <!--Toggle Button starts here -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: #65451F;"></span>
+                    <!-- <img src="Images/hamburger.png" alt="hamburger" class="navbar-toggler-icon"> -->
+                </button>
+                <!--Toggle Button ends here -->
+                <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNavDropdown">
+                    <!-- First Unordered List starts here -->
+                    <ul class="navbar-nav first-ul text-center">
+                        <li class="nav-item nav-li">
+                            <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link active text-white" aria-current="page" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link text-white" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item nav-li">
+                            <a class="nav-link text-white" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                    <!-- First Unordered List ends here -->
+
+                    <!-- Search Box -->
+                    <div
+                        class="search-box-div position-relative d-none d-lg-flex align-items-center justify-content-lg-end">
+                        <a href="#search" class="search-icon" id="search-icon">
+                            <span class="search-icon-container fs-1 d-block">
+                                <i class="fa-solid fa-magnifying-glass magnifying-glass-icon"
+                                    style="color: #ffffff;"></i>
+                            </span>
+                        </a>
+
+                        <div id="search" class="search-bar">
+                            <a href="#" class="close-btn text-dark">&times;</a>
+                            <input type="text" placeholder="Search" class="search-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- Nav Bar ends here -->
+
+        <!-- Hero Section starts here -->
+        <section class="hero-sec overflow-x-hidden">
+            <div class="card card-bg">
+                <div class="d-flex align-items-center card-flex">
+                    <div class="card-body text-left justify-content-start">
+                        <h3 class="card-title sub-head text-left">WELCOME TO</h3>
+                        <h1 class="card-title fs-1 hero-head text-left">BEANS & BREWS!</h1>
+                        <p class="card-text text-white text-left fs-4">Where coffee invites you <br>to indulge in rich
+                            flavors and a warm ambiance.</p>
+                        <button href="#" class="btn rounded-pill hero-btn fw-bold">Order Online</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section ends here -->
+    </section>
+
+    <!-- Menu Bar starts here -->
+    <nav class="menu-bar navbar navbar-expand overflow-x-hidden" aria-label="Tenth navbar example">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav w-100 pt-2 d-flex justify-content-around">
+                    <li class="nav-item d-block text-center menu-li">
+                        <a class="nav-link d-block text-center" href="#"><i class="fa-solid fa-mug-hot menu-icon"
+                                style="color: #ffffff;"></i>
+                            <p class="pt-3 text-center menu-txt fw-bold">Coffee</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block text-center menu-li">
+                        <a class="nav-link d-block text-center" href="#"><i class="fa-solid fa-cheese menu-icon"
+                                style="color: #ffffff;"></i>
+                            <p class="pt-3 text-center menu-txt fw-bold">Desserts</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block text-center menu-li">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-burst menu-icon" style="color: #ffffff;"></i>
+                            <p class="pt-3 text-center menu-txt fw-bold">Special</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block text-center menu-li">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-store menu-icon" style="color: #ffffff;"></i>
+                            <p class="pt-3 text-center menu-txt fw-bold">Bakery</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu Bar ends here -->
+
+    <!-- Story Section starts here -->
+    <section class="story-sec container-fluid w-100 overflow-x-hidden">
+        <div class="col-xxl-8  py-5">
+            <div class="row flex-md-row-reverse align-items-center g-5 px-0 mx-0 me-0 py-5">
+                <div class="col-12 col-md-6">
+                    <img src="Images/story-img.jpeg" class="d-block mx-lg-auto img-fluid w-100" alt="Story image"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="story-head fs-1 fw-bold lh-1 mb-3">OUR STORY</h1>
+                    <p class="lead fs-5">Welcome to Beans n Brews, where every cup tells a story.
+                        <br><br>
+                        Our journey began with a simple passion for exceptional coffee and a vision to create a
+                        community
+                        hub
+                        where everyone feels at home. Nestled in the heart of Your City, we opened our doors in 1897
+                        with a
+                        mission to offer more than just coffee—we wanted to create a place where friends meet, ideas
+                        flourish,
+                        and moments are savored.
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button href="#" class="btn rounded-pill story-btn fw-bold">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Story Section ends here -->
+
+    <!-- Specialities Section starts here -->
+    <section class="specialities container-fluid container-lg overflow-x-hidden">
+        <div class="row special-row mb-3 text-center g-5">
+            <!-- First Row starts here -->
+            <!-- Main Heading -->
+            <h2 class="specail-main-head fw-bold">OUR SPECIAL BEVERAGES</h2>
+            <!-- Card# 01 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-1.jpeg" class="card-img-top" alt="Irish Coffee">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Irish Coffee</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$15</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 02 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-2.jpeg" class="card-img-top" alt="Latte">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Latte</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$10</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 03 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-3.jpeg" class="card-img-top" alt="Iced Coffee">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Iced Coffee</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$6</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 04 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-4.jpeg" class="card-img-top" alt="Mocha">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Mocha</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$7</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- First Row ends here -->
+
+            <!-- Second Row starts here -->
+            <!-- Main Heading -->
+            <h2 class="specail-main-head fw-bold">OUR SPECIAL DESSERTS</h2>
+            <!-- Card# 05 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-5.jpeg" class="card-img-top" alt="Mint Oreo Brownies">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Mint Oreo Brownies</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$6</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 06 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-6.jpeg" class="card-img-top" alt="Affogato">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Italian Coffee Affogato</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$8</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 07 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-7.jpeg" class="card-img-top" alt="Chocolate Chip Muffins">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Chocolate Chip Muffins</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$5</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card# 08 -->
+            <div class="col-12 col-md-6 col-lg-3 themed-grid-col">
+                <div class="card custom-card w-100" style="width: 18rem;">
+                    <img src="Images/special-8.jpeg" class="card-img-top" alt="Ice Cream Sandwich">
+                    <div class="card-body">
+                        <h4 class="special-head text-uppercase fw-bold fs-5">Ice Cream Sandwich</h4>
+                        <div class="button d-flex justify-content-between align-items-center m-0 p-0">
+                            <p class="price fw-bold fs-5 pt-3">$6</p>
+                            <button href="#" class="btn rounded-pill special-btn fw-bold m-0 p-0">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row ends here -->
+        </div>
+    </section>
+    <!-- Specialities Section ends here -->
+
+    <!-- Events Section starts here -->
+    <section class="events-sec container-fluid w-100 overflow-x-hidden">
+        <div class="col-xxl-8  py-5">
+            <div class="row flex-row-reverse flex-md-row align-items-center g-5 px-0 mx-0 me-0 py-5">
+                <div class="col-12 col-md-6">
+                    <img src="Images/events.jpeg" class="d-block mx-lg-auto img-fluid w-100" alt="Events Image"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="story-head fs-1 fw-bold lh-1 mb-3">OUR EVENTS</h1>
+                    <p class="lead fs-5 events-p">Join us at the Beans n Brews for a variety of exciting events
+                        throughout the
+                        week!
+                        <br><br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Live Music
+                            Nights</span>
+                        <br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Open Mic
+                            Tuesdays</span>
+                        <br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Coffee
+                            Tasting Workshops</span>
+                        <br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Art
+                            Exhibitions</span>
+                        <br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Book Club
+                            Meetings</span>
+                        <br>
+                        <span class="fw-bold"><img src="Images/beans.png" alt="" class="bean-point"> &nbsp Seasonal
+                            Celebrations</span>
+                        <br><br>
+                        Come experience the vibrant community and diverse events at the Beans n Brews, where there's
+                        always something happening!
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button href="#" class="btn rounded-pill events-btn fw-bold">Join Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Story Section ends here -->
+
+    <!-- Subscription Input Form starts here -->
+    <div class="form w-100 my-3 overflow-x-hidden">
+        <div class="inner-div">
+            <h3 class="text-center subs-head">Join in and get 20% off!</h3>
+            <p class="text-center text-white subs-content">We have special discounts and membership deals for our
+                subscribers. So hurry and get yours today!</p>
+            <form action="" class="w-100 d-block d-md-flex justify-content-center">
+                <label><input type="email" name="Subscription" placeholder="Enter your Email" required
+                        class="subs-input"></label>
+                <button type="submit" class="btn subs-btn text-white fs-5 rounded-pill">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <!-- Subscription Input Form ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="container-fluid container-md overflow-x-hidden">
+        <div class="row row-cols-2 row-cols-md-5 py-5 my-5">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <img src="Images/Logo.png" class="img-fluid logo" alt="Logo">
+                </a>
+                <p class="social-icons-container">
+                    <i class="social-icons fa-brands fa-square-instagram" style="color: #65451F;"></i>
+                    <i class="social-icons fa-brands fa-square-x-twitter" style="color: #65451F;"></i>
+                    <i class="social-icons fa-brands fa-square-facebook" style="color: #65451F;"></i>
+                </p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="foot-head">MENU</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shop</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="foot-head">Services</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Walk-thru</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Online Shop</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="foot-head">Events</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Live Music Nights</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Open Mic Tuesdays</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Coffee Tasting
+                            Workshops</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Art Exhibitions</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Seasonal
+                            Celebrations</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Information -->
+        <div class="bottom-div text-center">
+            <p class="copy-right pt-2">&copy; 2024 Rabia Bhutto. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+</body>
+
+</html>
